@@ -1,0 +1,39 @@
+body { margin: 0; font-family: Arial; }
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+section {
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+#about {
+  background: linear-gradient(to right, #3a6186, #89253e);
+}
+#places {
+  background: url('https://via.placeholder.com/1600x900') center/cover fixed;
+}
+#culture {
+  background: radial-gradient(circle, #1f4037, #99f2c8);
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #ccc;
+}

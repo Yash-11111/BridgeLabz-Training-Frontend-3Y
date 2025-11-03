@@ -1,0 +1,39 @@
+body { margin: 0; font-family: Arial; background: #f7f7f7; }
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 50px;
+}
+.plan {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  transition: all 0.3s;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.plan:hover {
+  transform: scale(1.05);
+  background: #f0f8ff;
+}
+.plan h2 { margin-bottom: 15px; }
+ul { list-style: none; padding: 0; margin-bottom: 20px; }
+.price { font-size: 1.5em; margin: 15px 0; }
+a {
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.popular {
+  border-color: #007bff;
+  background: #e6f0ff;
+}
+@media (max-width:600px) {
+  .pricing { flex-direction: column; }
+}

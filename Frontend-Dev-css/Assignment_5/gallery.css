@@ -1,0 +1,30 @@
+body { margin: 0; background: #f4f4f4; font-family: Arial; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s;
+}
+.img-container span {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.4s;
+}
+.img-container:hover img { transform: scale(1.1); }
+.img-container:hover span { opacity: 1; }

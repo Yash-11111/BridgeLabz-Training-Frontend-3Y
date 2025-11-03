@@ -1,0 +1,17 @@
+body { margin: 0; background: #fdf6e3; font-family: "Times New Roman"; }
+main {
+  column-count: 3;
+  column-gap: 40px;
+  padding: 40px;
+  text-align: justify;
+}
+h1 {
+  column-span: all;
+  text-align: center;
+  font-size: 2.5em;
+}
+img {
+  float: left;
+  margin: 0 15px 10px 0;
+  border-radius: 5px;
+}
