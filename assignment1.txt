@@ -1,0 +1,100 @@
+Q-1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Ans. Frontend: The visible part of a website that users interact with includes layout, buttons, colors, and text.           
+     Example: The product display page on Amazon.
+     Technologies: HTML, CSS, JavaScript.
+
+     Backend: The behind-the-scenes part that handles data, logic, and server communication.
+     Example: User login system that checks data in the database.
+     Technologies: Node.js, Java, Python, PHP.
+
+     Full-Stack: A developer who works on both frontend and backend.
+     Example: Building both the login page and the server that processes login details.
+
+Q-2. Create a simple diagram showing how the client-server model works in web architecture.
+
+Ans.
++-----------+        Request        +-----------+        Query             +-----------+
+|  Browser  |  ------------------>  | Web Server |  ----------------> | Database  |
+|  (Client) |                      | (Backend)  |                    | (Data)    |
++-----------+        Response       +-----------+        Data         +-----------+
+       <--------------------------------------------------------------------
+
+
+Q-3. Describe how a browser requests and displays a web page from a web server.
+
+Ans. Browser → sends request → Server → returns data → Browser → shows page to user.
+
+
+Q-4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+
+Ans. VS Code - Used to write and edit code (HTML, CSS, JavaScript).
+     Web Browser (Chrome/Firefox) - To test and preview web pages.
+     Git & GitHub - For version control and saving project history.
+     Node.js - Runs JavaScript outside the browser and manages packages.
+     Command Prompt/Terminal - Used to run commands, servers, and installation
+
+
+Q-5. Explain what a web server is and give examples of commonly used servers.
+
+Ans. A web server is software or hardware that stores, processes, and delivers web pages to users when requested through a browser.
+     When you type a URL, the web server sends the required files to your browser for display.
+
+     Examples of web servers:
+
+     i) Apache HTTP Server
+
+     ii) Nginx
+
+     iii) Microsoft IIS
+
+     iv) LiteSpeed
+
+
+Q-6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Ans. Frontend Developer	- Creates the visual part of a website that users see and interact with using HTML, CSS, and JavaScript.
+     Backend Developer - Handles server-side logic, APIs, and connects the website with databases.
+     Database Administrator (DBA) - Manages and secures the database, performs backups, and ensures data accuracy and performance.
+
+
+Q-7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Ans. i) Download and install Visual Studio Code from https://code.visualstudio.com
+
+     ii) Install useful extensions: Live Server, Prettier, HTML CSS Support, JavaScript Snippets.
+
+     iii) Create project files — index.html, style.css, and script.js.
+
+     iv) Right-click index.html → click “Open with Live Server” to view your webpage in a browser.
+
+
+Q-8. Explain the difference between static and dynamic websites. Provide an example of each.
+
+Ans. Static Website - Fixed content for every user, no server or database connection.	
+     Eg. - Portfolio, Company Info Page
+     Dynamic Website - Content changes based on user data or input, connected to a database.	
+     Eg. - Facebook, YouTube, Amazon
+
+Q-9. Research and list five web browsers. Explain how rendering engines differ between them.
+
+Ans. Web browser     |    Rendering Engine  |   Details
+     Google Chrome	  Blink	                Fast, modern, and used widely.
+     Mozilla Firefox	  Gecko	                Open-source engine by Mozilla.
+     Safari	          WebKit	        Default on Apple devices.
+     Microsoft Edge	  Blink	                Chromium-based engine like Chrome.
+     Opera	          Blink	                Uses Chromium with built-in features.
+
+Q-10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+Ans. Client (Browser)
+           ↓
+     Sends Request (HTTP)
+           ↓
+     Web Server (Backend)
+           ↓
+     Fetches Data from Database via APIs
+           ↓
+     Sends Response Back
+           ↓
+     Browser Displays the Web Page
