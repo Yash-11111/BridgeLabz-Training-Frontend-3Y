@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  color: #fff;
+  padding: 15px 40px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN GRID LAYOUT */
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+/* ARTICLE */
+article {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated Title */
+.animated-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flexbox inside article */
+.flex-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #4db8ff;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+}
+
+/* SIDEBAR */
+aside {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex-boxes {
+    flex-direction: column;
+  }
+}
