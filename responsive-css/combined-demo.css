@@ -1,0 +1,52 @@
+/* Combined responsive demo — header/nav (flex), main (grid), footer */
+*{box-sizing:border-box}
+body{margin:0;font-family: 'Segoe UI', sans-serif;background:#fbfdff;color:#111}
+
+/* Header */
+.site-header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 1.2rem; background:linear-gradient(90deg,#1565c0,#1e88e5); color:#fff;
+  position:sticky; top:0; z-index:10;
+}
+.site-nav a{ color:white; margin-left:1rem; text-decoration:none; font-weight:600; transition:opacity .2s }
+.site-nav a:hover{ opacity:.9 }
+
+/* Main grid: 3 sections */
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 320px;
+  gap:1.2rem;
+  max-width:1100px;
+  margin:1.4rem auto;
+  padding:0 1rem;
+  align-items:start;
+}
+
+/* Gallery preview */
+.gallery-preview .thumbs{
+  display:flex; gap:.6rem; flex-wrap:wrap;
+}
+.gallery-preview img{
+  width:100%; max-width:180px; border-radius:8px; box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  transition: transform .25s ease, filter .25s ease; cursor:grab;
+}
+.gallery-preview img:hover{ transform: translateY(-6px); filter:brightness(.95) }
+
+/* Explanation */
+.explain{ background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(16,24,40,0.06) }
+.explain h2{ margin-top:0 }
+.cheat-preview{ background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,0.06) }
+
+/* Footer */
+.site-footer{ text-align:center; padding:1rem; background:#e8f4ff; margin-top:1.2rem }
+
+/* Fade-in animation for main content */
+.grid, .gallery-preview img, .explain, .cheat-preview{ animation: fadeIn .6s ease both; }
+@keyframes fadeIn{ from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+
+/* Stack vertically below 700px */
+@media (max-width:700px){
+  .grid{ grid-template-columns: 1fr; padding:0 0.8rem }
+  .site-nav{ margin-top:0.6rem; gap:.6rem; display:flex; flex-wrap:wrap }
+  .gallery-preview .thumbs{ justify-content:center }
+}

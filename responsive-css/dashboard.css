@@ -1,0 +1,44 @@
+/* Dashboard layout using CSS Grid for larger layout, shifting to stacked on small screens */
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',sans-serif;background:#f7fbff;color:#111}
+
+/* Topbar */
+.topbar{ display:flex; justify-content:space-between; align-items:center; padding:1rem 1.2rem; background:linear-gradient(90deg,#1565c0,#1e88e5); color:#fff; position:sticky; top:0; z-index:10 }
+.topbar .nav a{ color:#fff; margin-left:1rem; text-decoration:none; }
+
+/* Grid layout: sidebar + main */
+.layout{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap:1rem;
+  max-width:1200px;
+  margin:1.2rem auto;
+  padding:0 1rem;
+}
+
+/* Sidebar */
+.sidebar{ background:#fff; border-radius:10px; padding:1rem; box-shadow:0 8px 20px rgba(16,24,40,0.06) }
+.sidebar ul{ list-style:none; padding:0; margin:0; }
+.sidebar li{ padding:.6rem 0; border-bottom:1px solid #f1f5f9 }
+
+/* Main content and cards */
+.main{ background:transparent; }
+.cards{ display:grid; grid-template-columns: repeat(2,1fr); gap:1rem; margin-top:1rem }
+.card{ background:#fff; padding:1.2rem; border-radius:10px; box-shadow:0 8px 20px rgba(16,24,40,0.06); transition: transform .25s ease, box-shadow .25s ease; animation: loadIn .5s ease both }
+.card:hover{ transform: scale(1.03); box-shadow:0 18px 40px rgba(16,24,40,0.12) }
+
+/* Load animation */
+@keyframes loadIn{
+  from{ opacity:0; transform: translateY(10px) }
+  to{ opacity:1; transform:none }
+}
+
+/* Footer */
+.foot{ text-align:center; padding:1rem; margin-top:1rem; color:#475569 }
+
+/* Responsive: sidebar moves to top and cards stack under 750px */
+@media (max-width:750px){
+  .layout{ grid-template-columns: 1fr; }
+  .sidebar{ order: -1; } /* moves sidebar before main visually */
+  .cards{ grid-template-columns: 1fr; }
+}
