@@ -1,0 +1,48 @@
+/* Basic layout */
+body { margin:0; font-family: 'Segoe UI', Tahoma; background:#f7fafc; color:#222; }
+header, footer { text-align:center; padding:1rem; background:#fff; }
+
+/* Center form using Flexbox */
+.form-center { display:flex; align-items:center; justify-content:center; min-height:70vh; padding:2rem; }
+
+/* Form container */
+.styled-form {
+  width:420px; max-width:95%;
+  background:white; padding:1.6rem; border-radius:10px;
+  box-shadow:0 8px 20px rgba(16,24,40,0.06);
+  display:flex; flex-direction:column; gap:1rem;
+}
+
+/* Label as block for semantics and spacing */
+label { display:block; font-weight:600; color:#333; font-size:0.95rem; }
+
+/* Inputs and textarea */
+input, textarea {
+  width:100%; padding:0.7rem; border-radius:8px; border:1px solid #d1d5db;
+  transition: box-shadow 0.18s ease, outline-color 0.18s ease;
+  font-family: inherit;
+}
+
+/* Outline styles and offset demonstration on focus */
+input:focus, textarea:focus {
+  outline: 3px dashed rgba(21,101,192,0.35); /* custom outline style */
+  outline-offset: 4px;                        /* creates separation from element */
+  box-shadow: 0 6px 14px rgba(21,101,192,0.08);
+  border-color: #1565c0;
+}
+
+/* Different outline styles (visual variety) */
+input[type="email"]:focus { outline-style: solid; }
+input[type="text"]:focus { outline-style: dotted; }
+
+/* Button */
+button {
+  padding:0.8rem; border-radius:8px; border:none; background:#1565c0; color:white;
+  font-weight:700; cursor:pointer;
+}
+
+/* Uniform spacing enforced by gap on form container */
+.styled-form > * { /* already maintained by gap */ }
+
+/* Accessibility tip visible: show :focus for keyboard users */
+/* No JS used; pure CSS interactions */

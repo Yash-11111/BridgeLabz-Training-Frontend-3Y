@@ -1,0 +1,55 @@
+/* Base typographic system */
+body{
+  margin:0; font-family: "Georgia", "Times New Roman", serif; background:#fff;
+  color:#222; line-height:1.6;
+  padding:1rem 1.2rem;
+}
+
+/* Header */
+header { text-align:center; padding:1rem 0; background:#f8fbff; border-bottom:1px solid #eef3fb; }
+header h1 { margin:0; color:#0b57a4; font-family: 'Poppins', Arial, sans-serif; }
+
+/* Article container */
+.article {
+  max-width:760px;
+  margin:2rem auto;
+  padding:1.6rem;
+}
+
+/* Lead paragraph */
+.lead {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight:500;
+  font-size:1.05rem;
+  color:#374151;
+}
+
+/* Body text */
+.body-text {
+  font-size:1rem;
+  letter-spacing:0.01em; /* subtle letter spacing */
+  text-align:justify;    /* better reading flow in paragraphs */
+  margin-top:1rem;
+}
+
+/* Styling mark, strong and em */
+mark { background: #fff3b0; color:#6b3f00; padding:0.1rem 0.2rem; border-radius:3px; }
+strong { color:#0b3b91; font-weight:700; }
+em { color:#9a5f00; font-style:italic; }
+
+/* ::first-line and ::first-letter usage */
+.first-line-example::first-line {
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+}
+.first-letter-example::first-letter {
+  font-size:2.4rem;
+  font-weight:700;
+  float:left;
+  line-height:1;
+  margin-right:0.4rem;
+  color:#0b57a4;
+}
+
+/* Ensure good contrast and spacing for readability */
+h2, h3 { color:#0b57a4; margin-top:1.4rem; }

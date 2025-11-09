@@ -1,0 +1,56 @@
+/* Basic page setup */
+* { box-sizing: border-box; }
+body{
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin:0; color:#111; background:#f4f7fb;
+}
+header, footer { text-align:center; padding:1rem; background:#fff; }
+header h1 { margin:0 0 .2rem 0; color:#1565c0; }
+
+/* Arrange boxes horizontally using Flexbox */
+.transform-row{
+  display:flex;
+  gap:1.5rem;
+  justify-content:center;
+  align-items:center;
+  padding:2.5rem;
+  flex-wrap:wrap; /* responsive wrap */
+}
+
+/* Card wrapper */
+.card { text-align:center; width:150px; }
+
+/* The visible box */
+.box{
+  background:#1976d2;
+  color:white;
+  padding:1.4rem;
+  border-radius:8px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.08);
+  transition: all 0.4s ease; /* required transition */
+  transform-origin:center;
+  user-select:none;
+}
+
+/* Labels below each box */
+figcaption{ margin-top:.6rem; color:#333; font-weight:600; }
+
+/* Individual hover transformations */
+.card.rotate .box:hover {
+  transform: rotate(15deg);
+}
+.card.scale .box:hover {
+  transform: scale(1.18);
+}
+.card.translate .box:hover {
+  transform: translate(20px, -10px);
+}
+.card.skew .box:hover {
+  transform: skewX(12deg);
+}
+
+/* Small responsive tweak */
+@media (max-width:520px){
+  .transform-row { gap:1rem; }
+  .card { width:45%; }
+}

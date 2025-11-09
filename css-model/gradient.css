@@ -1,0 +1,42 @@
+/* Header and footer fixed */
+header, footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #222;
+  z-index: 1000;
+}
+
+header { top: 0; }
+footer { bottom: 0; }
+
+/* Spacing for main content */
+main {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* Linear gradient section */
+.linear {
+  height: 60vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e88e5, #8e24aa);
+  background-attachment: fixed; /* Parallax-like effect */
+}
+
+/* Radial gradient section */
+.radial {
+  height: 60vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #ffcc80, #fb8c00);
+}

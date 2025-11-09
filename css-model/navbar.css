@@ -1,0 +1,39 @@
+/* Reset basics */
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Segoe UI', Tahoma; color:#222;background:#f6fbff;}
+
+/* Header and nav layout */
+.site-header{background:white;border-bottom:1px solid #eef4fb; position:sticky; top:0; z-index:100;}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0.8rem 1rem;}
+
+/* Brand */
+.brand{font-weight:800;color:#0b57a4;text-decoration:none;font-size:1.1rem;}
+
+/* Navigation list horizontally */
+.nav-list{display:flex;gap:0.6rem;list-style:none;margin:0;padding:0;align-items:center;}
+.nav-link{
+  display:inline-block;padding:0.6rem 0.9rem;border-radius:6px;border:1px solid transparent;
+  text-decoration:none;color:#0b3b91;font-weight:600;transition: all 0.3s ease;
+}
+
+/* Hover effect with background, border and subtle transform */
+.nav-link:hover{
+  background:#e8f3ff;border-color:#cfe8ff;transform:translateY(-2px);
+}
+
+/* Active link highlighted */
+.nav-link.active{
+  background:#0b57a4;color:white;border-color:#0b57a4;
+}
+
+/* Responsive: stack vertically under 700px */
+@media (max-width:700px){
+  .nav{flex-direction:column;gap:.6rem;align-items:stretch;}
+  .nav-list{flex-direction:column;padding:0.5rem 0;}
+  .nav-link{width:100%;text-align:center;}
+}
+
+/* Footer */
+.site-footer{background:#fff;padding:0.9rem;text-align:center;border-top:1px solid #eef4fb;margin-top:2rem;}
+/* Hero for page body */
+.hero{padding:3rem;text-align:center;}

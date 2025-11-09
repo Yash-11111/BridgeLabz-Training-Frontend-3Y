@@ -1,0 +1,50 @@
+/* Page basics */
+body { margin:0; font-family: 'Segoe UI', Tahoma; background:#fbfdff; color:#222; }
+header { text-align:center; padding:1rem; background:#fff; border-bottom:1px solid #eef3fb; }
+.center { display:flex; justify-content:center; align-items:center; padding:2rem; }
+
+/* Demo wrapper centered with Flexbox */
+.demo { display:flex; flex-direction:column; gap:1.5rem; align-items:center; }
+
+/* Visual stack of layers */
+.outer {
+  margin:2rem; /* margin area (space around the orange border) */
+  background: rgba(0,0,0,0.02);
+  padding:0.5rem;
+}
+
+.border {
+  border: 6px solid #fb8c00; /* border layer */
+  padding: 0.6rem;           /* padding layer (between border & content) */
+  background: #fff8e1;
+}
+
+.padding {
+  background: #fff59d;       /* yellow: visual padding */
+  padding: 1rem;
+}
+
+.content {
+  background: #ffffff;
+  padding:0.6rem;
+  color:#111;
+}
+
+/* Comparison section: demonstrate box-sizing */
+.compare { width:90%; max-width:800px; text-align:center; }
+.compare-grid { display:flex; gap:1rem; justify-content:center; margin-top:1rem; }
+.box {
+  width:280px; height:80px; padding:20px; border:4px solid #1976d2;
+  background:#e8f3ff; display:flex; justify-content:center; align-items:center;
+  text-align:center;
+}
+/* default content-box (browser default) demonstrates size increase because padding/border added */
+.box.default { box-sizing: content-box; }
+
+/* border-box: padding and border counted inside width */
+.box.border-box { box-sizing: border-box; background:#d7f0ff; border-color:#0b57a4; }
+
+/* small responsive tweaks */
+@media (max-width:700px){
+  .compare-grid { flex-direction:column; }
+}

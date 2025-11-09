@@ -1,0 +1,89 @@
+/* === General Page Setup === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #1976d2;
+    color: white;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.3rem;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e3f2fd;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* === Flexbox Layout for Boxes === */
+.border-demo {
+    display: flex;
+    flex-wrap: wrap;           /* ensures responsiveness */
+    justify-content: center;   /* center horizontally */
+    gap: 1.5rem;               /* spacing between boxes */
+    padding: 2rem;
+}
+
+/* === Base Box Styling === */
+.box {
+    background-color: white;
+    width: 220px;
+    padding: 1rem;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Different Border Styles */
+.solid {
+    border-style: solid;
+    border-color: #1976d2;
+}
+
+.dashed {
+    border-style: dashed;
+    border-color: #388e3c;
+    padding: 1.2rem;
+}
+
+.double {
+    border-style: double;
+    border-color: #f57c00;
+    padding: 1.5rem;
+}
+
+.groove {
+    border-style: groove;
+    border-color: #9c27b0;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+/* === Hover Effects === */
+.box:hover {
+    border-color: #000;
+    cursor: pointer;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+    .border-demo {
+        flex-direction: column;
+        align-items: center;
+    }
+}

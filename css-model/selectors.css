@@ -1,0 +1,64 @@
+/* === Attribute Selectors === */
+input[type="text"] {
+  border: 2px solid #1976d2;
+}
+
+/* Matches all links that start with "https" */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+/* === Pseudo-classes === */
+input:focus {
+  border-color: orange;
+  outline: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* :nth-child() highlights every 2nd list item */
+.numbers li:nth-child(2n) {
+  background-color: #e3f2fd;
+}
+
+/* === Pseudo-elements === */
+h2::before {
+  content: "👉 ";
+  color: #1976d2;
+}
+
+h2::after {
+  content: " 👈";
+  color: #1976d2;
+}
+
+/* === Combinators === */
+
+/* Descendant selector (targets list items inside .numbers) */
+.numbers li {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Adjacent sibling (+) — style the next ul after a form */
+form + ul {
+  border-top: 2px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* General sibling (~) — if multiple lists followed */
+h2 ~ ul {
+  margin-top: 0.5rem;
+}
+
+/* Child selector (>) — style only direct children */
+main > section {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
