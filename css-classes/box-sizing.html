@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="box-sizing.css" />
+</head>
+<body>
+  <header><h1>Box-Sizing Comparison</h1></header>
+
+  <main class="box-container">
+    <div class="box default">
+      <p>Default (content-box)</p>
+    </div>
+    <div class="box border-box">
+      <p>With box-sizing: border-box;</p>
+    </div>
+  </main>
+
+  <section class="explanation">
+    <p><strong>Explanation:</strong> The box on the right keeps its total width constant because padding and border are included inside the specified width.</p>
+  </section>
+
+  <footer><p>© 2025 Box-Sizing Demo</p></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+  text-align: center;
+}
+
+header, footer {
+  padding: 1rem;
+  background-color: #1565c0;
+  color: white;
+}
+
+/* Flex layout for boxes */
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Box styles */
+.box {
+  width: 250px;
+  padding: 20px;
+  border: 10px solid #1976d2;
+  background-color: #bbdefb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.default {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: #90caf9;
+}
+
+/* Description */
+.explanation {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

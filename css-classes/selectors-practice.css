@@ -1,0 +1,20 @@
+/* Element selector */
+body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; }
+
+/* Class selector */
+.highlight { background-color: #e3f2fd; }
+
+/* ID selector */
+#intro { color: #1565c0; font-weight: bold; }
+
+/* Attribute selector */
+a[target="_blank"] { color: green; }
+
+/* Combinators */
+.nested > p { color: #e65100; }          /* Child */
+.nested p + p { text-decoration: underline; } /* Adjacent sibling */
+ul li ~ li { font-style: italic; }       /* General sibling */
+section p { margin-bottom: 0.6rem; }     /* Descendant */
+
+/* Comments explain each rule */
+header, footer { background: #1976d2; color: white; text-align: center; padding: 1rem; }

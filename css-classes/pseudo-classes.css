@@ -1,0 +1,89 @@
+/* General page setup */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Flex container for all examples */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Example boxes */
+.example {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+/* Link hover */
+a {
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #0b3b91;
+  background-color: #e3f2fd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+
+/* Input focus */
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+input:focus {
+  border-color: #1565c0;
+  outline: none;
+}
+
+/* Button active */
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #42a5f5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:active {
+  background-color: #1e88e5;
+}
+
+/* nth-child styling */
+.list-demo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-demo li {
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 0.2rem 0;
+  background-color: #f1f1f1;
+}
+.list-demo li:nth-child(2n) {
+  background-color: #e3f2fd;
+}
