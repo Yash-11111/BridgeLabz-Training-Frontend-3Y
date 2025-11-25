@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Backpack",
+      "price": 49,
+      "image": "img/b1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "price": 799,
+      "image": "img/b2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Shoes",
+      "price": 59,
+      "image": "img/b3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Watch",
+      "price": 120,
+      "image": "img/b4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Headphones",
+      "price": 99,
+      "image": "img/b5.jpg"
+    }
+  ]
+}
