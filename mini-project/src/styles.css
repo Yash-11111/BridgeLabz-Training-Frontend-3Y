@@ -1,0 +1,131 @@
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0067d6;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.controls button {
+  margin-right: 10px;
+}
+
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.students-table th {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.students-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.students-table tr:hover {
+  background: #f0f8ff;
+}
+
+
+.students-table button {
+  margin-right: 6px;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.students-table button:nth-child(1) { background: #198754; } /* View */
+.students-table button:nth-child(2) { background: #ffc107; color: black; } /* Edit */
+.students-table button:nth-child(3) { background: #dc3545; } /* Delete */
+
+.students-table button:nth-child(1):hover { background: #157347; }
+.students-table button:nth-child(2):hover { background: #e0a800; }
+.students-table button:nth-child(3):hover { background: #b02a37; }
+
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.student-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.student-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.details-card {
+  margin-top: 20px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.details-card p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.details-card strong {
+  color: #333;
+}

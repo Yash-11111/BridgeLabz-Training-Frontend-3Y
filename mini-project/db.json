@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Asha Kumar",
+      "section": "A",
+      "marks": 85,
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Rohit Sharma",
+      "section": "B",
+      "marks": 72,
+      "grade": "B"
+    },
+    {
+      "id": "3",
+      "name": "Maya Iyer",
+      "section": "A",
+      "marks": 93,
+      "grade": "A+"
+    },
+    {
+      "id": "4",
+      "name": "Sahil Verma",
+      "section": "C",
+      "marks": 60,
+      "grade": "C"
+    },
+    {
+      "id": "5",
+      "name": "Priya Singh",
+      "section": "B",
+      "marks": 78,
+      "grade": "B+"
+    }
+  ]
+}
